@@ -68,7 +68,18 @@ AtliQ Mart ran **five types of promotions** across **five product categories**. 
 4. **Customize Promotions by Category** rather than applying blanket discounts.
 
 ---
+<img width="1433" height="856" alt="image" src="https://github.com/user-attachments/assets/61c10e8d-fb79-42dc-8ccb-17b0b7206728" />
 
+---
+<img width="1427" height="814" alt="image" src="https://github.com/user-attachments/assets/f9f20c79-12ea-4848-9c8e-6e0f1e7da7e6" />
+
+---
+<img width="1438" height="809" alt="image" src="https://github.com/user-attachments/assets/c861ec39-ef1a-443c-9a76-13e820c85be1" />
+
+---
+<img width="1440" height="809" alt="image" src="https://github.com/user-attachments/assets/80c49c15-5dc0-4235-b9bf-8034500f45db" />
+
+---
 
 ## 👤 Author
 **Akanksha Kohale**  
