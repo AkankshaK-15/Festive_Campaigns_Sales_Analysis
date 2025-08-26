@@ -74,4 +74,7 @@ AtliQ Mart ran **five types of promotions** across **five product categories**. 
 **Akanksha Kohale**  
 📧 akankshakohale15@gmail.com
 
-🔗 www.linkedin.com/in/akanksha-kohale  
+🔗 www.linkedin.com/in/akanksha-kohale
+
+---
+#### Note: This project is sourced from **#Codebasics Resume Project Challenge#**. The dataset and business problem were provided as part of the challenge.
