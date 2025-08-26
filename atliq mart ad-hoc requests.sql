@@ -4,7 +4,8 @@ CHANGE COLUMN `quantity_sold(after_promo)` `qty_sold_after_promo` INT NOT Null
 ALTER TABLE `retail_events_db`.`fact_events` 
 CHANGE COLUMN `quantity_sold(before_promo)` `qty_sold_before_promo` INT NOT Null
 
-
+-- List of products with a base price greater than 500 and that are featured in promo type of 'BOGOF' (Buy One Get One Free).
+	
 select distinct fe.product_code,
 	   dp.product_name as High_value_products,
        fe.base_price
@@ -12,16 +13,18 @@ from fact_events fe
 join dim_products dp
 on fe.product_code = dp.product_code
 where promo_type = 'BOGOF' and base_price > 500
-
-------------------------------------------------------------------
-
+-------------------------------------------------------------------------------------------------------------------
+-- Number of stores in each city
+	
 select city,
        count(store_id) as No_of_stores
 from dim_stores
 group by city
 order by No_of_stores desc
 
----------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------
+-- Campaigns along with the total revenue generated before and after the campaign.
+	
 with before_promo as
 (
 select campaign_id,
@@ -48,7 +51,9 @@ from before_promo bp
 join after_promo ap
 using (campaign_id)
 
------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- Incremental Sold Quantity (ISU%) for each category during the campaigns.
+	
 with sales as
 (
 select fe.campaign_id,
@@ -70,7 +75,9 @@ select campaign_id,
 from sales
 order by campaign_id,incremental_sales_units_rate desc
 
-------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- Top 5 products, ranked by Incremental Revenue Percentage (IR%), across all campaigns
+	
 with before_rev as
 (
 select product_code,
@@ -102,5 +109,6 @@ on br.product_code = ar.product_code
 join dim_products dp 
 on dp.product_code = ar.product_code
 order by incremental_rev_rate desc
+limit 5
 
        
