@@ -1,7 +1,6 @@
 # 📊 AtliQ Mart Festive Promotions Impact Analysis  
 
-This repository contains an analysis of **AtliQ Mart’s promotional campaigns** conducted during **Diwali** and **Sankranti** festivals.  
-The study evaluates the effectiveness of different promotional types across multiple product categories in terms of **incremental sales** and **revenue generated**.  
+This repository contains an analysis of **AtliQ Mart’s promotional campaigns** conducted during **Diwali** and **Sankranti** festivals. The study evaluates the effectiveness of different promotional types across multiple product categories in terms of **incremental sales** and **revenue generated**.  
 
 ---
 
